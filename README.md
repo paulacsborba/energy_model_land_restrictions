@@ -308,15 +308,4 @@ print(results)
 The Zenodo deposit associated with this repository contains the model outputs used to produce the results reported in the paper
 (10.5281/zenodo.22147960).
 
-# Reproducibility notes
 
-The geospatial input datasets are not all redistributed because some are large or subject to access and licensing conditions. Users must obtain the original spatial datasets from their respective providers and update the paths in the geospatial scripts.
-
-The archived code documents the analytical workflow used in the study. Exact reproduction requires:
-
-the same versions of the input spatial datasets;
-the original coordinate reference systems and raster resolutions;
-Calliope 0.6.10;
-compatible versions of QGIS, PyQGIS, and GDAL;
-the model input data included in or linked to the repository;
-a compatible optimisation solver.
