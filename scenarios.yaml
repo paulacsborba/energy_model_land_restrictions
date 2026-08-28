@@ -1,0 +1,12 @@
+scenarios: 
+
+
+    scenario_baseline: ['costs_2050','baseline','fossil_banned','demand_nz']
+    scenario_conservation: ['costs_2050','conservation','fossil_banned','demand_nz']       
+    scenario_governance: ['costs_2050','governance','fossil_banned','demand_nz']
+    scenario_degraded_pastures: ['costs_2050','degraded_pastures','fossil_banned','demand_nz']     
+    scenario_integrated: ['costs_2050','integrated','fossil_banned','demand_nz']  
+
+    scenario_epe: ['costs_2050','baseline','force_ethanol_light_vehicles','demand_nz']   
+
+      

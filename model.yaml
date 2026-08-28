@@ -1,0 +1,116 @@
+import:
+
+- techs/storage.yaml
+- techs/demand.yaml
+
+
+- techs/00_ethanol.yaml
+- techs/01_all_techs.yaml
+- techs/02_end_use_industry.yaml
+- techs/03_end_use_transport.yaml
+- techs/04_final_fuel_transmission_to_BR_industry.yaml
+- techs/05_support_techs.yaml
+- locations/locations_tanks_ethanol.yaml
+- locations/locations_electrolyser_h2.yaml
+- locations/locations_electricity.yaml
+- locations/locations_co2.yaml
+- locations/locations_storage_co2.yaml
+
+- locations/locations_land_pools_sugarcane_soybean2.yaml
+- locations/locations_zonal_new_fuel_production_and_transport.yaml
+
+- locations/links/locations_land_pools_to_zones_corrected.yaml
+
+- locations/links/locations_free_transportation_co2.YAML
+- locations/links/locations_free_transportation_electricity.YAML
+
+- locations/links/locations_free_transportation_sugarcane.YAML
+- locations/links/locations_free_transportation_soybean.yaml
+- locations/links/locations_free_transportation_soybean_high_shared.yaml
+
+- locations/links/locations_final_fuels_to_BR_for_industry.yaml
+- overrides3.yaml
+- scenarios.yaml
+
+
+model:
+  name: brazil_model_biomass
+  calliope_version: 0.6.10
+  timeseries_data_path: data
+  reserve_margin:
+    electricity: 0.15
+  subset_time:
+  - '2019-01-01'
+  - '2019-12-31'
+  time:
+    function: resample
+    function_options:
+      resolution: 1080H
+run:
+  solver: gurobi
+  solver_io: python
+  cyclic_storage: true
+  ensure_feasibility: true
+  bigM: 1e9
+  zero_threshold: 1e-10
+  mode: plan
+  objective_options:
+    cost_class:
+      monetary: 1
+
+locations:
+  # National node: aggregated industry useful-energy demands and industry replacement technologies only.
+  # Transport and biofuel feedstock production remain regional.
+  BR:
+    techs:
+      electricity: {}
+      co2: {}
+      biomass: {}
+      biogas: {}
+      electrolyser_h2: {}
+      demand_useful_industry_existing_bioenergy_heat: {}
+      demand_useful_industry_existing_electric_end_uses: {}
+      demand_useful_industry_existing_electrochemical_electricity: {}
+      demand_useful_industry_high_temperature_gaseous_fuels: {}
+      demand_useful_industry_high_temperature_liquid: {}
+      demand_useful_industry_high_temperature_solid_fossil: {}
+      demand_useful_industry_low_medium_heat_gaseous_fuels: {}
+      demand_useful_industry_low_medium_heat_liquid: {}
+      demand_useful_industry_low_medium_heat_solid_fossil: {}
+      demand_useful_industry_mechanical_work_combustion: {}
+      demand_useful_industry_steel_reduction_coke_reductant: {}
+      biomethane_to_high_temperature_gaseous_industry: {}
+      biomethane_to_low_medium_temperature_gaseous_industry: {}
+      emethane_to_high_temperature_gaseous_industry: {}
+      emethane_to_low_medium_temperature_gaseous_industry: {}
+      emethane_to_high_temperature_solid_fossil_industry: {}
+      emethane_to_low_medium_temperature_solid_fossil_industry: {}
+      hydrogen_to_high_temperature_liquid_industry: {}
+      hydrogen_to_low_medium_temperature_liquid_industry: {}
+      hydrogen_to_high_temperature_solid_fossil_industry: {}
+      hydrogen_to_low_medium_temperature_solid_fossil_industry: {}
+      hydrogen_to_high_temperature_gaseous_industry: {}
+      hydrogen_to_low_medium_temperature_gaseous_industry: {}
+      hvo_to_high_temperature_industry_liquid_industry: {}
+      hvo_to_low_medium_temperature_industry_liquid_industry: {}
+      e_methanol_to_high_temperature_industry_liquid_industry: {}
+      e_methanol_to_low_medium_temperature_industry_liquid_industry: {}
+      hydrogen_mechanical_work_combustion_industry: {}
+      hydrogen_steel_reduction_coke_reductant_industry: {}
+      hvo_mechanical_work_combustion_industry: {}
+      bio_oil_to_high_temperature_liquid_industry: {}
+      bio_oil_to_low_medium_temperature_liquid_industry: {}
+      biodiesel_to_high_temperature_liquid_industry: {}
+      biodiesel_to_low_medium_temperature_liquid_industry: {}
+      biodiesel_mechanical_work_combustion_industry: {}
+      electricity_to_low_medium_temperature_solid_fossil_industry: {}
+      electricity_to_low_medium_temperature_gaseous_industry: {}
+      electricity_to_low_medium_temperature_liquid_industry: {}
+      electricity_mechanical_work_industry: {}
+      bioenergy_existing_existing_bioenergy_heat: {}
+      electricity_existing_electric_end_uses: {}
+      electricity_existing_electrochemical_electricity: {}
+      biomass_to_high_temperature_solid_fossil_industry: {}
+      biomass_to_low_medium_temperature_solid_fossil_industry: {}
+      biocarbon_to_steel_reduction_coke_reductant: {}
+
