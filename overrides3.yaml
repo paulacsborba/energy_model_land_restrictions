@@ -43,47 +43,46 @@ overrides:
         #### reduction of 10% (opex) and 25% (capex) in biofuel from sugarcane technologies https://www.ieabioenergy.com/wp-content/uploads/2020/02/T41_CostReductionBiofuels-11_02_19-final.pdf (page 38)
         #### It was considered the medium-term (15yrs) and pessimistic scenario
 
-        techs.ref_ethanol_1g_electricity_high.costs.monetary.energy_cap: 0.906375
-        techs.ref_ethanol_1g_electricity_high.costs.monetary.om_annual: 0.01089
+        techs.ref_ethanol_1g_electricity_high.costs.monetary.energy_cap: 1354664.25  # 0.75 x 1806219
+        techs.ref_ethanol_1g_electricity_high.costs.monetary.om_annual: 16276.5 # 0.9 x 18085
 
-        techs.ref_ethanol_1g_electricity_medium.costs.monetary.energy_cap: 0.943575
-        techs.ref_ethanol_1g_electricity_medium.costs.monetary.om_annual: 0.01134
+        techs.ref_ethanol_1g_electricity_medium.costs.monetary.energy_cap: 1410263.25  # 0.75 x 1880351
+        techs.ref_ethanol_1g_electricity_medium.costs.monetary.om_annual: 16948.8  # 0.9 x 18832
 
-        techs.ref_ethanol_1g_electricity_low.costs.monetary.energy_cap: 0.998475
-        techs.ref_ethanol_1g_electricity_low.costs.monetary.om_annual: 0.01197
+        techs.ref_ethanol_1g_electricity_low.costs.monetary.energy_cap: 1492317.0  # 0.75 x 1989756
+        techs.ref_ethanol_1g_electricity_low.costs.monetary.om_annual: 17890.2  # 0.9 x 19878
 
-        techs.ref_ethanol_1g_2g_high.costs.monetary.energy_cap: 1.303725
-        techs.ref_ethanol_1g_2g_high.costs.monetary.om_annual: 0.10566
+        techs.ref_ethanol_1g_2g_high.costs.monetary.energy_cap: 1948542.75      # 0.75 x 2598057
+        techs.ref_ethanol_1g_2g_high.costs.monetary.om_annual: 157919.4         # 0.9 x 175466
 
-        techs.ref_ethanol_1g_2g_medium.costs.monetary.energy_cap: 1.357275
-        techs.ref_ethanol_1g_2g_medium.costs.monetary.om_annual: 0.10629
+        techs.ref_ethanol_1g_2g_medium.costs.monetary.energy_cap: 2028578.25    # 0.75 x 2704771
+        techs.ref_ethanol_1g_2g_medium.costs.monetary.om_annual: 158860.8       # 0.9 x 176512
 
-        techs.ref_ethanol_1g_2g_low.costs.monetary.energy_cap: 1.436175
-        techs.ref_ethanol_1g_2g_low.costs.monetary.om_annual: 0.10719
+        techs.ref_ethanol_1g_2g_low.costs.monetary.energy_cap: 2146501.5        # 0.75 x 2862002
+        techs.ref_ethanol_1g_2g_low.costs.monetary.om_annual: 160205.4          # 0.9 x 178006
 
 
     costs_2050:
 
-        #### reduction of 10% (opex) and 25% (capex) in biofuel from sugarcane technologies https://www.ieabioenergy.com/wp-content/uploads/2020/02/T41_CostReductionBiofuels-11_02_19-final.pdf (page 38)
-        #### It was considered the medium-term (15yrs) and pessimistic scenario
+        #### 30% reduction (capex and opex) relative to the base costs in techs/00_ethanol.yaml (USD/MW and USD/MW/year)
 
-        techs.ref_ethanol_1g_electricity_high.costs.monetary.energy_cap: 0.906375
-        techs.ref_ethanol_1g_electricity_high.costs.monetary.om_annual: 0.01089
+        techs.ref_ethanol_1g_electricity_high.costs.monetary.energy_cap: 1264353.3   # 0.7 x 1806219
+        techs.ref_ethanol_1g_electricity_high.costs.monetary.om_annual: 12659.5      # 0.7 x 18085
 
-        techs.ref_ethanol_1g_electricity_medium.costs.monetary.energy_cap: 0.943575
-        techs.ref_ethanol_1g_electricity_medium.costs.monetary.om_annual: 0.01134
+        techs.ref_ethanol_1g_electricity_medium.costs.monetary.energy_cap: 1316245.7 # 0.7 x 1880351
+        techs.ref_ethanol_1g_electricity_medium.costs.monetary.om_annual: 13182.4    # 0.7 x 18832
 
-        techs.ref_ethanol_1g_electricity_low.costs.monetary.energy_cap: 0.998475
-        techs.ref_ethanol_1g_electricity_low.costs.monetary.om_annual: 0.01197
+        techs.ref_ethanol_1g_electricity_low.costs.monetary.energy_cap: 1392829.2    # 0.7 x 1989756
+        techs.ref_ethanol_1g_electricity_low.costs.monetary.om_annual: 13914.6       # 0.7 x 19878
 
-        techs.ref_ethanol_1g_2g_high.costs.monetary.energy_cap: 1.303725
-        techs.ref_ethanol_1g_2g_high.costs.monetary.om_annual: 0.10566
+        techs.ref_ethanol_1g_2g_high.costs.monetary.energy_cap: 1818639.9            # 0.7 x 2598057
+        techs.ref_ethanol_1g_2g_high.costs.monetary.om_annual: 122826.2              # 0.7 x 175466
 
-        techs.ref_ethanol_1g_2g_medium.costs.monetary.energy_cap: 1.357275
-        techs.ref_ethanol_1g_2g_medium.costs.monetary.om_annual: 0.10629
+        techs.ref_ethanol_1g_2g_medium.costs.monetary.energy_cap: 1893339.7          # 0.7 x 2704771
+        techs.ref_ethanol_1g_2g_medium.costs.monetary.om_annual: 123558.4            # 0.7 x 176512
 
-        techs.ref_ethanol_1g_2g_low.costs.monetary.energy_cap: 1.436175
-        techs.ref_ethanol_1g_2g_low.costs.monetary.om_annual: 0.10719
+        techs.ref_ethanol_1g_2g_low.costs.monetary.energy_cap: 2003401.4             # 0.7 x 2862002
+        techs.ref_ethanol_1g_2g_low.costs.monetary.om_annual: 124604.2               # 0.7 x 178006
 
 # the other costs are already in 2050
     # ============================================================
