@@ -61,6 +61,13 @@ overrides:
         techs.ref_ethanol_1g_2g_low.costs.monetary.energy_cap: 2146501.5        # 0.75 x 2862002
         techs.ref_ethanol_1g_2g_low.costs.monetary.om_annual: 160205.4          # 0.9 x 178006
 
+        #### Electrolyser (alkaline, 1 GW) from DEA Technology Data - Renewable fuels (Aug 2026), 2040.
+        #### Converted from EUR2025/kW electrical input to USD/MW H2 output: EUR/kW x 1000 x 1.13 USD/EUR / 0.6435 (LHV efficiency).
+        #### Fixed O&M as % of capex per year; stack replacement not included.
+        techs.electrolyser_h2.constraints.energy_eff: 0.6435
+        techs.electrolyser_h2.costs.monetary.energy_cap: 1055683  # 601.18 EUR/kW_e
+        techs.electrolyser_h2.costs.monetary.om_annual: 26392  # 2.5%/yr
+
 
     costs_2050:
 
@@ -83,6 +90,13 @@ overrides:
 
         techs.ref_ethanol_1g_2g_low.costs.monetary.energy_cap: 2003401.4             # 0.7 x 2862002
         techs.ref_ethanol_1g_2g_low.costs.monetary.om_annual: 124604.2               # 0.7 x 178006
+
+        #### Electrolyser (alkaline, 1 GW) from DEA Technology Data - Renewable fuels (Aug 2026), 2050.
+        #### Converted from EUR2025/kW electrical input to USD/MW H2 output: EUR/kW x 1000 x 1.13 USD/EUR / 0.6435 (LHV efficiency).
+        #### Fixed O&M as % of capex per year; stack replacement not included.
+        techs.electrolyser_h2.constraints.energy_eff: 0.6435
+        techs.electrolyser_h2.costs.monetary.energy_cap: 848812  # 483.37 EUR/kW_e
+        techs.electrolyser_h2.costs.monetary.om_annual: 16976  # 2%/yr
 
 # the other costs are already in 2050
     # ============================================================
