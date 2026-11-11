@@ -74,7 +74,7 @@ overrides:
 
         #### Ethanol 1G surplus electricity revenue, priced at the same electricity price (42.52 USD/MWh).
         #### Surplus: 1 MWh per 3800 L ethanol = 0.0449 MWh_e per MWh ethanol (1 L = 0.005861 MWh). Revenue = 0.0449 x 42.52 = 1.91 USD/MWh ethanol.
-        techs.ref_ethanol_1g_existing.costs.monetary.om_prod: -1.91
+        techs.ref_ethanol_1g_existing.costs.monetary.om_prod: 28.65  # existing mills (supply tech): 30.56 feedstock - 1.91 electricity revenue
         techs.ref_ethanol_1g_electricity_high.costs.monetary.om_prod: -1.91
         techs.ref_ethanol_1g_electricity_medium.costs.monetary.om_prod: -1.91
         techs.ref_ethanol_1g_electricity_low.costs.monetary.om_prod: -1.91
@@ -115,7 +115,7 @@ overrides:
 
         #### Ethanol 1G surplus electricity revenue, priced at the same electricity price (42.52 USD/MWh).
         #### Surplus: 1 MWh per 3800 L ethanol = 0.0449 MWh_e per MWh ethanol (1 L = 0.005861 MWh). Revenue = 0.0449 x 42.52 = 1.91 USD/MWh ethanol.
-        techs.ref_ethanol_1g_existing.costs.monetary.om_prod: -1.91
+        techs.ref_ethanol_1g_existing.costs.monetary.om_prod: 28.65  # existing mills (supply tech): 30.56 feedstock - 1.91 electricity revenue
         techs.ref_ethanol_1g_electricity_high.costs.monetary.om_prod: -1.91
         techs.ref_ethanol_1g_electricity_medium.costs.monetary.om_prod: -1.91
         techs.ref_ethanol_1g_electricity_low.costs.monetary.om_prod: -1.91

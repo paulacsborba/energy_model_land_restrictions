@@ -19,6 +19,7 @@ import:
 - locations/locations_land_pools_sugarcane_soybean2.yaml
 - locations/locations_zonal_new_fuel_production_and_transport.yaml
 - locations/locations_ethanol_co2_capture.yaml
+- locations/locations_existing_ethanol.yaml
 
 - locations/links/locations_land_pools_to_zones_corrected.yaml
 
