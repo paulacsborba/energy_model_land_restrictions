@@ -72,6 +72,13 @@ overrides:
         #### Converted with 5.22 BRL/USD (EPE PDE 2034 cost parameters, Dec 2022 base): 237.48 / 5.22 = 45.49 USD/MWh.
         techs.electricity.costs.monetary.om_prod: 45.49
 
+        #### Ethanol 1G surplus electricity revenue, priced at the same electricity price (45.49 USD/MWh).
+        #### Surplus: 1 MWh per 3800 L ethanol = 0.0449 MWh_e per MWh ethanol (1 L = 0.005861 MWh). Revenue = 0.0449 x 45.49 = 2.04 USD/MWh ethanol.
+        techs.ref_ethanol_1g_existing.costs.monetary.om_prod: -2.04
+        techs.ref_ethanol_1g_electricity_high.costs.monetary.om_prod: -2.04
+        techs.ref_ethanol_1g_electricity_medium.costs.monetary.om_prod: -2.04
+        techs.ref_ethanol_1g_electricity_low.costs.monetary.om_prod: -2.04
+
 
     costs_2050:
 
@@ -105,6 +112,13 @@ overrides:
         #### Electricity supply price: average price of the 37th New Energy Auction (LEN A-5, Oct 2022), CCEE: 237.48 BRL/MWh.
         #### Converted with 5.22 BRL/USD (EPE PDE 2034 cost parameters, Dec 2022 base): 237.48 / 5.22 = 45.49 USD/MWh.
         techs.electricity.costs.monetary.om_prod: 45.49
+
+        #### Ethanol 1G surplus electricity revenue, priced at the same electricity price (45.49 USD/MWh).
+        #### Surplus: 1 MWh per 3800 L ethanol = 0.0449 MWh_e per MWh ethanol (1 L = 0.005861 MWh). Revenue = 0.0449 x 45.49 = 2.04 USD/MWh ethanol.
+        techs.ref_ethanol_1g_existing.costs.monetary.om_prod: -2.04
+        techs.ref_ethanol_1g_electricity_high.costs.monetary.om_prod: -2.04
+        techs.ref_ethanol_1g_electricity_medium.costs.monetary.om_prod: -2.04
+        techs.ref_ethanol_1g_electricity_low.costs.monetary.om_prod: -2.04
 
 # the other costs are already in 2050
     # ============================================================
