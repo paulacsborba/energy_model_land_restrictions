@@ -68,6 +68,10 @@ overrides:
         techs.electrolyser_h2.costs.monetary.energy_cap: 1055683  # 601.18 EUR/kW_e
         techs.electrolyser_h2.costs.monetary.om_annual: 26392  # 2.5%/yr
 
+        #### Electricity supply price: average price of the 37th New Energy Auction (LEN A-5, Oct 2022), CCEE: 237.48 BRL/MWh.
+        #### Converted with 5.22 BRL/USD (EPE PDE 2034 cost parameters, Dec 2022 base): 237.48 / 5.22 = 45.49 USD/MWh.
+        techs.electricity.costs.monetary.om_prod: 45.49
+
 
     costs_2050:
 
@@ -97,6 +101,10 @@ overrides:
         techs.electrolyser_h2.constraints.energy_eff: 0.6435
         techs.electrolyser_h2.costs.monetary.energy_cap: 848812  # 483.37 EUR/kW_e
         techs.electrolyser_h2.costs.monetary.om_annual: 16976  # 2%/yr
+
+        #### Electricity supply price: average price of the 37th New Energy Auction (LEN A-5, Oct 2022), CCEE: 237.48 BRL/MWh.
+        #### Converted with 5.22 BRL/USD (EPE PDE 2034 cost parameters, Dec 2022 base): 237.48 / 5.22 = 45.49 USD/MWh.
+        techs.electricity.costs.monetary.om_prod: 45.49
 
 # the other costs are already in 2050
     # ============================================================
